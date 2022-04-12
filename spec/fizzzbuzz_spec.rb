@@ -6,6 +6,12 @@ describe 'fizzbuzz' do
   #   int = number
   # end
 
+  number = rand(100)
+
+  while number % 3 == 0 || number % 5 == 0
+    rand(100)
+  end
+
   it 'returns "fizz" when passed 3' do
     expect(fizzbuzz(3)).to eq 'fizz'
   end
@@ -17,12 +23,6 @@ describe 'fizzbuzz' do
   end
   it 'returns "1" when passed 1' do
     expect(fizzbuzz(1)).to eq 1
-  end
-  it 'returns "8" when passed 8' do
-    expect(fizzbuzz(8)).to eq 8
-  end
-  it 'returns "11" when passed 11' do
-    expect(fizzbuzz(11)).to eq 11
   end
   it 'returns "0" when passed 0' do
     expect(fizzbuzz(0)).to eq 0
